@@ -1,5 +1,5 @@
 @font-face {
-    font-family: NeueSchrift-Regular;
+    font-family: "NeueSchrift-Regular";
     src: url("/fonts/NeueSchrift-Regular.otf");
 }
 
@@ -8,7 +8,7 @@
 }
 
 body{
-    font-family: NeueSchrift-Regular;
+    font-family: "NeueSchrift-Regular";
     
 /*
     margin: 0;
