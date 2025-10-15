@@ -1,0 +1,137 @@
+@media print {
+
+    /* Size and marin for all pages ------------- */
+    @page {
+        size: 210mm 297mm;
+        margin-top: 0mm;
+        margin-bottom: 0mm;
+        font-family: "Times";
+    }  
+
+
+    /* LEFT PAGES -------------------------------- */
+
+    @page:left {
+        margin-left: 0mm;
+        margin-right: 0mm;
+        @left-top {
+            content: counter(page);
+            width: auto;
+        }
+        @bottom-center{
+            text-align: left;
+        }
+    }
+
+
+    /* RIGHT PAGES -------------------------------- */
+
+    @page:right {
+        margin-left: 0mm;
+        margin-right: 0mm;
+        @right-top {
+            content: counter(page);
+            width: auto;
+        }
+        @bottom-center{
+            text-align: right;
+        }
+    }
+
+
+
+    /* BLANK PAGES -------------------------------- */
+
+    @page:blank {
+        @left-top { content: none; }
+        @bottom-center { content: none; }
+        @right-top { content: none; }
+    }
+
+
+
+    /* COVER ------------------------------------- */
+
+    @page:first{
+        @right-top { content: none; }
+    }
+
+    
+    
+    /* SECTION BREAKS -------------------------------- */
+
+    .chapter {
+        break-before: right;
+    }
+
+
+
+    /* CONTENT --------------------------------------- */
+
+}
+
+
+
+#Ebene_Web {
+    display: none;
+}
+
+.random {
+        visibility: hidden;
+    }
+  
+.    
+/*
+#Ecken {
+        visibility: hidden;
+*/
+    /* } */
+ 
+path{
+/*    fill: none;*/
+  stroke: #646464;
+  stroke-width: 25px;
+  stroke-linejoin: round;
+    }
+
+img{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+}
+.cls-1, .cls-2 {
+    stroke: #646464;
+    stroke-width: 25px;
+    stroke-linejoin: round;
+    stroke-opacity: 0;
+         }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    
+ .page-break {
+                page-break-before: always;
+            }    
+/*     
+#Ebene_1, #Ebene_2, #Ebene_3, #Ebene_4, #Ebene_5, #Ebene_6, #Ebene_7, #Ebene_8, #Ebene_9, #Ebene_10, #Ebene_11, #Ebene_12, #Ebene_13, #Ebene_14, #Ebene_15, #Ebene_16, #Ebene_17, #Ebene_18, #Ebene_19, #Ebene_20, #Ebene_21, #Ebene_22, #Ebene_23, #Ebene_24, #Ebene_25, #Ebene_26, #Ebene_27, #Ebene_28, #Ebene_29, #Ebene_30, #Ebene_31, #Ebene_32, #Ebene_33, #Ebene_34, #Ebene_35, #Ebene_36, #Ebene_37, #Ebene_38, #Ebene_39, #Ebene_40, #Ebene_41, #Ebene_42, #Ebene_43, #Ebene_44, #Ebene_45, #Ebene_46, #Ebene_47, #Ebene_48, #Ebene_49, #Ebene_50, #Ebene_51, #Ebene_52, #Ebene_53, #Ebene_54, #Ebene_55, #Ebene_56, #Ebene_57, #Ebene_58, #Ebene_59, #Ebene_60, #Ebene_61, #Ebene_62, #Ebene_63, #Ebene_64, #Ebene_65, #Ebene_66, #Ebene_67, #Ebene_68, #Ebene_69, #Ebene_70, #Ebene_71, #Ebene_72, #Ebene_73, #Ebene_74, #Ebene_75, #Ebene_76, #Ebene_77, #Ebene_78, #Ebene_79, #Ebene_80, #Ebene_81, #Ebene_82, #Ebene_83, #Ebene_84, #Ebene_85, #Ebene_86, #Ebene_87, #Ebene_88, #Ebene_89, #Ebene_90, #Ebene_91, #Ebene_92, #Ebene_93, #Ebene_94, #Ebene_95, #Ebene_96, #Ebene_97, #Ebene_98, #Ebene_99, #Ebene_100, #Ebene_101, #Ebene_102, #Ebene_103, #Ebene_104, #Ebene_105, #Ebene_106, #Ebene_107, #Ebene_108, #Ebene_109, #Ebene_110, #Ebene_111, #Ebene_112, #Ebene_113, #Ebene_114, #Ebene_115, #Ebene_116, #Ebene_117, #Ebene_118, #Ebene_119, #Ebene_120
+{
+/*    display: block;*/
+    /* position: absolute; */
+    
+    /* } */
+
+/*         
+ @page:nth() #Ebene_1, #Ebene_2, #Ebene_3, #Ebene_4, #Ebene_5, #Ebene_6, #Ebene_7, #Ebene_8, #Ebene_9, #Ebene_10, #Ebene_11, #Ebene_12, #Ebene_13, #Ebene_14, #Ebene_15, #Ebene_16, #Ebene_17, #Ebene_18, #Ebene_19, #Ebene_20, #Ebene_21, #Ebene_22, #Ebene_23, #Ebene_24, #Ebene_25, #Ebene_26, #Ebene_27, #Ebene_28, #Ebene_29, #Ebene_30, #Ebene_31, #Ebene_32, #Ebene_33, #Ebene_34, #Ebene_35, #Ebene_36, #Ebene_37, #Ebene_38, #Ebene_39, #Ebene_40, #Ebene_41, #Ebene_42, #Ebene_43, #Ebene_44, #Ebene_45, #Ebene_46, #Ebene_47, #Ebene_48, #Ebene_49, #Ebene_50, #Ebene_51, #Ebene_52, #Ebene_53, #Ebene_54, #Ebene_55, #Ebene_56, #Ebene_57, #Ebene_58, #Ebene_59, #Ebene_60, #Ebene_61, #Ebene_62, #Ebene_63, #Ebene_64, #Ebene_65, #Ebene_66, #Ebene_67, #Ebene_68, #Ebene_69, #Ebene_70, #Ebene_71, #Ebene_72, #Ebene_73, #Ebene_74, #Ebene_75, #Ebene_76, #Ebene_77, #Ebene_78, #Ebene_79, #Ebene_80, #Ebene_81, #Ebene_82, #Ebene_83, #Ebene_84, #Ebene_85, #Ebene_86, #Ebene_87, #Ebene_88, #Ebene_89, #Ebene_90, #Ebene_91, #Ebene_92, #Ebene_93, #Ebene_94, #Ebene_95, #Ebene_96, #Ebene_97, #Ebene_98, #Ebene_99, #Ebene_100, #Ebene_101, #Ebene_102, #Ebene_103, #Ebene_104, #Ebene_105, #Ebene_106, #Ebene_107, #Ebene_108, #Ebene_109, #Ebene_110, #Ebene_111, #Ebene_112, #Ebene_113, #Ebene_114, #Ebene_115, #Ebene_116, #Ebene_117, #Ebene_118, #Ebene_119, #Ebene_120
+{
+                display: block;
+} */
+    
+/*
+ @page:nth(3) #Ebene_4 {
+                display: block;
+            }
+ @page:nth(4) #Ebene_5 {
+                display: block;
+            }

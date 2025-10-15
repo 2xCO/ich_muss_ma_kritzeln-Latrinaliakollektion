@@ -1,0 +1,266 @@
+
+*{
+     cursor:crosshair;
+}
+
+body{
+    font-family: "NeueSchrift-Regular";
+    
+/*
+    margin: 0;
+    padding: 0;
+*/
+    overflow: hidden;
+}
+
+#Ebene_Web {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+img{
+    visibility: hidden;
+}
+
+/*
+    right: auto;
+    bottom: auto;
+*/
+/*
+    width: 100vw;
+    height: 100vh;
+*/
+    cursor:crosshair
+
+/*––––––––––––––SVG Line Styles*/
+path{
+/*    fill: none;*/
+  stroke: #646464;
+  stroke-width: 25px;
+  stroke-linejoin: round;
+         }
+
+
+.cls-1, .cls-2 {
+    stroke: #646464;
+    stroke-width: 25px;
+    stroke-linejoin: round;
+    stroke-opacity: 0;
+         }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+.Ecken{
+    visibility: hidden;
+}
+
+/*--––––––––––––SVG container and hover*/
+
+g:hover{
+    fill: yellow;
+     cursor:crosshair;
+}
+
+@keyframes in {
+    from{
+        
+        opacity: 0;
+        visibility: none;
+    }
+    
+    to{
+        opacity: 0.9;
+        visibility: visible;
+    }
+}
+
+@keyframes out {
+    from{
+        opacity: 0.9;
+        visibility: visible;
+    }
+    
+    to{ 
+        opacity: 0;
+        visibility: none;
+    }
+}
+
+/*ohne Hover*/
+rect ~ .tooltip,
+#All_Day_Every_Day ~ .tooltip,
+#Wer_hat_Bock_auf_ein_Rave ~ .tooltip,
+#you_are_magic ~ .tooltip,
+#Esst_weniger_wurst ~ .tooltip,
+#echt_ma ~ .tooltip,
+#scheissen_befreit ~ .tooltip,
+#Sucht_und_Ordnung ~ .tooltip,
+#i_m_gay ~ .tooltip,
+#nicecat ~ .tooltip,
+#krsex ~ .tooltip,
+#mckn ~ .tooltip,
+#hierstehtja ~ .tooltip,
+#scheißdichfrei ~ .tooltip,
+#mothman ~ .tooltip,
+#pheo ~ .tooltip,
+#washatkunst ~ .tooltip,
+#ist_ok ~ .tooltip,
+#hauptsache ~ .tooltip,
+#ichsehnur ~ .tooltip
+{
+   
+    animation-name: out;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+ 
+}
+
+
+/*Hover*/
+#frage:hover ~ #legende,
+#All_Day_Every_Day:hover ~ #alld,
+#Wer_hat_Bock_auf_ein_Rave:hover ~ #werh,
+#you_are_magic:hover ~ #youa,
+#Esst_weniger_wurst:hover ~ #esst,
+#echt_ma:hover ~ #echt,
+#scheissen_befreit:hover ~ #sche,
+#Sucht_und_Ordnung:hover ~ #such,
+#i_m_gay:hover ~ #imga,
+#nicecat:hover ~ #nice,
+#krsex:hover ~ #krse,
+#mckn:hover ~ #mc,
+#hierstehtja:hover ~ #hier,
+#scheißdichfrei:hover ~ #frei,
+#mothman:hover ~ #moth,
+#pheo:hover ~ #ph,
+#washatkunst:hover ~ #wash,
+#ist_ok:hover ~ #isto, 
+#hauptsache:hover ~ #haup, 
+#ichsehnur:hover ~ #ichs 
+{
+
+    animation-name: in;
+    animation-duration: .7s;
+    animation-fill-mode: forwards;
+}
+
+
+#alld, #werh, #youa, #esst, #echt, #sche, #such, #imga #nice #krse #mc #hier #frei #moth #ph #wash #isto #haup #ichs #legende{
+	visibility: hidden;
+}
+
+.tooltip text {
+    fill: black;
+    font-size: 320px;
+    font-family: NeueSchrift-Regular;
+}
+
+.tooltip rect {
+
+    fill: yellow;
+
+}
+
+.tooltip{
+    
+/*
+    width: 100vw;
+    height: 100vh;
+*/
+    z-index: 100;
+    pointer-events:none;
+}
+
+.head{
+    font-size: 20px;
+}
+
+/*------Font-Feature Settings-----*/
+.ss01 {
+    font-feature-settings: "ss01" 1;
+}
+
+.ss02 {
+    font-feature-settings: "ss02" 1;
+}
+
+.ss03 {
+    font-feature-settings: "ss03" 1;
+}
+
+.ss04 {
+    font-feature-settings: "ss04" 1;
+}
+
+.ss05 {
+    font-feature-settings: "ss05" 1;
+}
+
+.ss06 {
+    font-feature-settings: "ss06" 1;
+}
+
+.ss07 {
+    font-feature-settings: "ss07" 1;
+}
+
+.ss08 {
+    font-feature-settings: "ss08" 1;
+}
+
+.ss09 {
+    font-feature-settings: "ss09" 1;
+}
+
+.ss10 {
+    font-feature-settings: "ss10" 1;
+}
+
+.ss11 {
+    font-feature-settings: "ss11" 1;
+}
+
+.ss12 {
+    font-feature-settings: "ss12" 1;
+}
+
+.ss13 {
+    font-feature-settings: "ss13" 1;
+}
+
+.ss14 {
+    font-feature-settings: "ss14" 1;
+}
+
+.ss15 {
+    font-feature-settings: "ss15" 1;
+}
+
+.ss16 {
+    font-feature-settings: "ss16" 1;
+}
+
+.ss17 {
+    font-feature-settings: "ss17" 1;
+}
+
+.ss18 {
+    font-feature-settings: "ss18" 1;
+}
+
+.ss19 {
+    font-feature-settings: "ss19" 1;
+}
+
+.ss20 {
+    font-feature-settings: "ss20" 1;
+}
+
+/*----für print---*/
+
+#Ebene_1, #Ebene_2, #Ebene_3, #Ebene_4, #Ebene_5, #Ebene_6, #Ebene_7, #Ebene_8, #Ebene_9, #Ebene_10, #Ebene_11, #Ebene_12, #Ebene_13, #Ebene_14, #Ebene_15, #Ebene_16, #Ebene_17, #Ebene_18, #Ebene_19, #Ebene_20, #Ebene_21, #Ebene_22, #Ebene_23, #Ebene_24, #Ebene_25, #Ebene_26, #Ebene_27, #Ebene_28, #Ebene_29, #Ebene_30, #Ebene_31, #Ebene_32, #Ebene_33, #Ebene_34, #Ebene_35, #Ebene_36, #Ebene_37, #Ebene_38, #Ebene_39, #Ebene_40, #Ebene_41, #Ebene_42, #Ebene_43, #Ebene_44, #Ebene_45, #Ebene_46, #Ebene_47, #Ebene_48, #Ebene_49, #Ebene_50, #Ebene_51, #Ebene_52, #Ebene_53, #Ebene_54, #Ebene_55, #Ebene_56, #Ebene_57, #Ebene_58, #Ebene_59, #Ebene_60, #Ebene_61, #Ebene_62, #Ebene_63, #Ebene_64, #Ebene_65, #Ebene_66, #Ebene_67, #Ebene_68, #Ebene_69, #Ebene_70, #Ebene_71, #Ebene_72, #Ebene_73, #Ebene_74, #Ebene_75, #Ebene_76, #Ebene_77, #Ebene_78, #Ebene_79, #Ebene_80, #Ebene_81, #Ebene_82, #Ebene_83, #Ebene_84, #Ebene_85, #Ebene_86, #Ebene_87, #Ebene_88, #Ebene_89, #Ebene_90, #Ebene_91, #Ebene_92, #Ebene_93, #Ebene_94, #Ebene_95, #Ebene_96, #Ebene_97, #Ebene_98, #Ebene_99, #Ebene_100, #Ebene_101, #Ebene_102, #Ebene_103, #Ebene_104, #Ebene_105, #Ebene_106, #Ebene_107, #Ebene_108, #Ebene_109, #Ebene_110, #Ebene_111, #Ebene_112, #Ebene_113, #Ebene_114, #Ebene_115, #Ebene_116, #Ebene_117, #Ebene_118, #Ebene_119, #Ebene_120 {
+    display: none;
+}
