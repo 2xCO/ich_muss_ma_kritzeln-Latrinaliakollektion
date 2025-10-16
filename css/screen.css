@@ -1,6 +1,7 @@
 @font-face {
     font-family: "NeueSchrift-Regular";
-    src: url("/fonts/NeueSchrift-Regular.woff2");
+    src:  url ("/fonts/NeueSchrift-Regular.otf") format("opentype"),
+    url ("/fonts/NeueSchrift-Regular.woff2") format("woff2");
 }
 
 *{
